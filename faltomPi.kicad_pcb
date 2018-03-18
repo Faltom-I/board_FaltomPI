@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 20)
+    (drawings 24)
     (tracks 0)
     (zones 0)
     (modules 5)
@@ -260,6 +260,10 @@
       (solder_mask_margin 1.725) (clearance 1.725))
   )
 
+  (gr_line (start 104.9 53) (end 111.1 53) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 111.1 59.2) (end 111.1 53) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 104.9 59.2) (end 111.1 59.2) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 104.9 53) (end 104.9 59.2) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 49.5 49) (end 46.5 49) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 55157F8A))
   (gr_line (start 49.5 46) (end 108.5 46) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 108.5 49) (end 108.5 46) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 55157F2C))
