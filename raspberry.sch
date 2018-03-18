@@ -17,14 +17,14 @@ $EndDescr
 $Comp
 L faltomPi-rescue:raspberry-RESCUE-FaltomPi-FaltomPi-rescue J2
 U 1 1 5516AE26
-P 6500 1500
+P 4200 4350
 AR Path="/5516AE26" Ref="J2"  Part="1" 
 AR Path="/5515D395/5516AE26" Ref="J1"  Part="1" 
-F 0 "J1" H 7250 1750 60  0000 C CNN
-F 1 "raspberry" H 7250 1650 60  0000 C CNN
-F 2 "faltom:rpi_hat_th" H 6500 1500 60  0001 C CNN
-F 3 "" H 6500 1500 60  0000 C CNN
-	1    6500 1500
+F 0 "J1" H 4950 4600 60  0000 C CNN
+F 1 "raspberry" H 4950 4500 60  0000 C CNN
+F 2 "faltom:rpi_hat_th" H 4200 4350 60  0001 C CNN
+F 3 "" H 4200 4350 60  0000 C CNN
+	1    4200 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -192,16 +192,153 @@ Wire Wire Line
 	2700 2000 3900 2000
 Wire Notes Line
 	4050 500  4050 2850
-Wire Notes Line
-	4050 2850 500  2850
 Text Notes 500  600  0    50   ~ 0
 HAT EEPROM
-Text Label 8300 2800 0    50   ~ 0
+Text Label 6000 5650 0    50   ~ 0
 pi_eeprom_scl_3v3
 Wire Wire Line
-	8200 2800 9050 2800
-Text Label 5450 2800 0    50   ~ 0
+	5900 5650 6750 5650
+Text Label 3150 5650 0    50   ~ 0
 pi_eeprom_sda_3v3
 Wire Wire Line
-	5400 2800 6300 2800
+	3100 5650 4000 5650
+$Comp
+L faltom:DMG2305UX U?
+U 1 1 5AAE8E7C
+P 5750 1050
+F 0 "U?" V 5993 1050 50  0000 C CNN
+F 1 "DMG2305UX" V 5902 1050 50  0000 C CNN
+F 2 "faltom:DiodeInc_SOT-23" H 5750 1050 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/1332/0900766b81332207.pdf" H 5850 1150 50  0001 C CNN
+	1    5750 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L faltom:DMMT5401-7-F U?
+U 1 1 5AAE97BF
+P 5750 1600
+F 0 "U?" H 6178 1646 50  0000 L CNN
+F 1 "DMMT5401-7-F" H 6178 1555 50  0000 L CNN
+F 2 "faltom:DiodeInc_SOT-26" H 6450 1950 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/0e49/0900766b80e49504.pdf" H 6450 1950 50  0001 C CNN
+	1    5750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5AAE9AF6
+P 5000 700
+F 0 "#PWR?" H 5000 550 50  0001 C CNN
+F 1 "+5V" H 5015 873 50  0000 C CNN
+F 2 "" H 5000 700 50  0001 C CNN
+F 3 "" H 5000 700 50  0001 C CNN
+	1    5000 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 700  5000 1050
+Wire Wire Line
+	5000 1050 5450 1050
+Wire Wire Line
+	5450 1250 5450 1050
+Connection ~ 5450 1050
+Wire Wire Line
+	5450 1050 5550 1050
+Wire Wire Line
+	6050 1250 6050 1050
+Wire Wire Line
+	6050 1050 6600 1050
+Wire Wire Line
+	6050 1050 5950 1050
+Connection ~ 6050 1050
+$Comp
+L device:R R?
+U 1 1 5AAEA86E
+P 5450 2300
+F 0 "R?" H 5520 2346 50  0000 L CNN
+F 1 "10k" H 5520 2255 50  0000 L CNN
+F 2 "" V 5380 2300 50  0001 C CNN
+F 3 "" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AAEA8BC
+P 5450 2550
+F 0 "#PWR?" H 5450 2300 50  0001 C CNN
+F 1 "GND" H 5455 2377 50  0000 C CNN
+F 2 "" H 5450 2550 50  0001 C CNN
+F 3 "" H 5450 2550 50  0001 C CNN
+	1    5450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AAEA8D9
+P 6050 2300
+F 0 "R?" H 6120 2346 50  0000 L CNN
+F 1 "47k" H 6120 2255 50  0000 L CNN
+F 2 "" V 5980 2300 50  0001 C CNN
+F 3 "" H 6050 2300 50  0001 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5AAEA921
+P 6050 2550
+F 0 "#PWR?" H 6050 2300 50  0001 C CNN
+F 1 "GND" H 6055 2377 50  0000 C CNN
+F 2 "" H 6050 2550 50  0001 C CNN
+F 3 "" H 6050 2550 50  0001 C CNN
+	1    6050 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2550 6050 2450
+Wire Wire Line
+	5450 2150 5450 2100
+Wire Wire Line
+	5850 1950 5850 2100
+Wire Wire Line
+	5850 2100 5650 2100
+Connection ~ 5450 2100
+Wire Wire Line
+	5450 2100 5450 1950
+Wire Wire Line
+	5750 1350 5750 2000
+Wire Wire Line
+	5750 2000 6050 2000
+Wire Wire Line
+	6050 2000 6050 1950
+Wire Wire Line
+	6050 2000 6050 2150
+Connection ~ 6050 2000
+Wire Wire Line
+	5650 1950 5650 2100
+Connection ~ 5650 2100
+Wire Wire Line
+	5650 2100 5450 2100
+Wire Wire Line
+	5450 2450 5450 2550
+Text Label 6250 1050 0    50   ~ 0
+pi_pwr_5v
+Text Label 6000 4350 0    50   ~ 0
+pi_pwr_5v
+Wire Wire Line
+	5900 4350 5950 4350
+Wire Wire Line
+	5900 4450 5950 4450
+Wire Wire Line
+	5950 4450 5950 4350
+Connection ~ 5950 4350
+Wire Wire Line
+	5950 4350 6750 4350
+Wire Notes Line
+	7200 2850 7200 500 
+Wire Notes Line
+	500  2850 7200 2850
+Text Notes 4100 600  0    50   ~ 0
+Pi supply
 $EndSCHEMATC
