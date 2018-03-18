@@ -123,6 +123,40 @@ X E 6 -300 350 225 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# faltom:DigitalIO_OUT
+#
+DEF faltom:DigitalIO_OUT J 0 40 Y Y 1 F N
+F0 "J" 50 600 50 H V C CNN
+F1 "faltom:DigitalIO_OUT" 250 -800 50 H V C CNN
+F2 "faltom:Molex_43045-1201" -50 500 50 H I C CNN
+F3 "https://github.com/Faltom-I/Faltom-I/blob/master/digitalIO.md" 50 600 50 H I C CNN
+DRAW
+T 0 350 300 50 0 0 0 3v3 Normal 0 C C
+S -100 -695 -50 -705 1 1 6 N
+S -100 -495 -50 -505 1 1 6 N
+S -100 -395 -50 -405 1 1 6 N
+S -100 -195 -50 -205 1 1 6 N
+S -100 -95 -50 -105 1 1 6 N
+S -100 5 -50 -5 1 1 6 N
+S -100 105 -50 95 1 1 6 N
+S -100 205 -50 195 1 1 6 N
+S -100 305 -50 295 1 1 6 N
+S -100 505 -50 495 1 1 6 N
+S -100 550 450 -750 1 1 10 f
+P 5 0 0 0 200 350 250 350 250 -200 250 -550 200 -550 N
+X GND 1 -250 -700 150 R 50 50 1 1 W
+X TX 10 -250 -500 150 R 50 50 1 1 O
+X INT 11 -250 -200 150 R 50 50 1 1 I
+X 5V 2 -250 500 150 R 50 50 1 1 w
+X SCK 4 -250 300 150 R 50 50 1 1 O
+X MOSI 5 -250 200 150 R 50 50 1 1 O
+X MISO 6 -250 100 150 R 50 50 1 1 I
+X Set 7 -250 0 150 R 50 50 1 1 O
+X Latch 8 -250 -100 150 R 50 50 1 1 O
+X RX 9 -250 -400 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # faltomPi-rescue:raspberry-RESCUE-FaltomPi-FaltomPi-rescue
 #
 DEF faltomPi-rescue:raspberry-RESCUE-FaltomPi-FaltomPi-rescue J 0 40 Y Y 1 F N

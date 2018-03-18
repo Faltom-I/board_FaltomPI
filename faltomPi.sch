@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1400 1400 1000 1000
+S 3950 2800 1000 1000
 U 5515D395
 F0 "Raspberry" 60
 F1 "raspberry.sch" 60
