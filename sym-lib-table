@@ -26,4 +26,5 @@
   (lib (name contrib)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/contrib.lib)(options "")(descr ""))
   (lib (name valves)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/valves.lib)(options "")(descr ""))
   (lib (name faltomPi-rescue)(type Legacy)(uri ${KIPRJMOD}/faltomPi-rescue.lib)(options "")(descr ""))
+  (lib (name faltom)(type Legacy)(uri ${KIPRJMOD}/../kicad_library/faltom.lib)(options "")(descr ""))
 )
